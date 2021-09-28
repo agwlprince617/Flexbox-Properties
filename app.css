@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-wrap: wrap-reverse; 
+    align-items: center; */
+    align-items: baseline;
+}
+
+#container div{     
+    width: 200px;
+    height: 200px; 
+    text-align: center;
+    font-size: 4em;
+    flex-basis: 200px ;
+    transition: margin-top 1.5s ease-in-out;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display:flex;
+}
+
+main .Meals{
+    background-color: rgb(218, 215, 250);
+    flex:1 2 300px; 
+}
+main .nav{
+    background-color: rgb(0, 140, 255);
+    flex:2 1 600px;
+}
+main .drinks{
+    background-color: rgb(197, 116, 10);
+    flex:1 2 300px; 
+}
+section:hover div{
+    margin-top: 250px;
+}
+#container div:nth-of-type(1){
+    transition-timing-function: linear;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+#container div:nth-of-type(2){
+    transition-timing-function: ease-in;
+}
+#container div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
+#container div:nth-of-type(4){
+    transition-timing-function: ease-in;
+}
+#container div:nth-of-type(5){
+    transition-timing-function: linear;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
